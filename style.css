@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Orbitron&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Baloo Da 2', cursive;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -6,25 +12,47 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: rgb(61, 58, 58);
+    background-color: rgb(70, 69, 69);
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     flex: 1;
     gap: 20px;
 }
 
 .row {
+    border: 2px solid rgb(37, 35, 35);
+    background-color: rgb(150, 143, 143);
+    transition: transform .5s;
+    transition: background-color .5s;
+    border-radius: 20px;
+    font-size: 30px;
+    flex-direction: column;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    flex: 1;
+    height: 450px;
+    width: 450px;
+    gap: 15px;
 }
+
+.row-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
 img {
     height: 300px;
     width: auto;
+}
+
+.row:hover {
+    background-color: rgb(70, 65, 65);
+    transform: translateY(.2rem);
 }
